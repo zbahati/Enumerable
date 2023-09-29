@@ -1,7 +1,3 @@
-# frozen_string_literal: true
-
-
-# Class definition
 module MyEnumerable
   def all?(&block)
     each { |item| return false unless block.call(item) }
